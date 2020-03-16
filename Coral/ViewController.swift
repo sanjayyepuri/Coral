@@ -47,7 +47,7 @@ class ViewController: NSViewController {
             print("change detected")
             //print(events.description)
             // filters out update events
-            if(events.description.contains("Item Xattr Modification")){
+            if(events.description.contains("Item Modified")){ // TODO: "Item Xattr Modification"
                 print("reloading PDF")
                 self.refreshPDF()
             }
